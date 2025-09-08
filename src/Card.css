@@ -25,3 +25,92 @@
 .card:hover{
     transform: translateY(-10px);
 }
+
+.card-container {
+  background-color: #333; /* Dark background similar to your image */
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px; /* Adjust width as needed */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 16px; /* Add spacing between cards */
+}
+
+.card-header {
+  margin-bottom: 20px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+  flex-grow: 1; /* Allows the title to take available space */
+}
+
+.square-placeholder {
+  width: 30px;
+  height: 30px;
+  background-color: #555; /* Placeholder color */
+  border-radius: 4px;
+}
+
+.product-info {
+  margin-bottom: 20px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+}
+
+.time-left {
+  font-size: 0.9em;
+  color: #aaa;
+  margin: 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+  gap: -10px; /* Overlap avatars slightly */
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #333; /* Border to show separation when overlapping */
+  object-fit: cover;
+}
+
+.plus-others {
+  background-color: #555; /* Background for the +8 */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  margin-left: -10px; /* Bring it closer to the last avatar */
+  z-index: 1; /* Make sure it's above the avatar */
+}
+
+.circle-placeholder {
+  width: 30px;
+  height: 30px;
+  background-color: #555; /* Placeholder color */
+  border-radius: 50%;
+}
