@@ -5,18 +5,18 @@ h1 {
 
 .square-card {
   width: 200px;
-  height: 200px;
+  height: 250px;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 16px 0; /* Remove auto centering */
-  background-color: black; /* Black background inside the card */
-  color: white; /* Ensure text is visible on black background */
+  margin: 16px;
+  background-color: black;
+  color: white;
 }
 
 .card-image {
@@ -37,11 +37,32 @@ h1 {
 
 .card-description {
   font-size: 0.9rem;
-  color: #ddd; /* Light color for description text */
+  color: #ddd;
 }
 
 .container {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   padding: 16px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.counter button {
+  padding: 4px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+}
+
+.counter button:hover {
+  background-color: #777;
 }
